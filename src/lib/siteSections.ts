@@ -19,7 +19,6 @@ export const SITE_SECTIONS = [
   { id: "pilares", label: "Pilares" },
   { id: "fluxo", label: "Fluxo" },
   { id: "beneficios", label: "Benefícios" },
-  { id: "sobre-nos", label: "Sobre nós" },
   { id: "confidencialidade", label: "Confidencialidade" },
   { id: "sistema", label: "Sistema" },
   { id: "contato", label: "Contato" },

@@ -1,6 +1,7 @@
 import { j as jsxRuntimeExports, r as reactExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { N as Navbar, f as fieldImg, i as industrialImg, c as cn, l as logoCCA } from "./utils-DxbC-_0b.mjs";
+import { N as Navbar, i as industrialImg, l as logoCCA } from "./industrial-BXO_1P4u.mjs";
+import { f as fieldImg, c as cn } from "./utils-Bl2p2gxr.mjs";
 import { S as Slot } from "../_libs/radix-ui__react-slot.mjs";
 import { c as cva } from "../_libs/class-variance-authority.mjs";
 import { C as Checkbox$1, a as CheckboxIndicator } from "../_libs/radix-ui__react-checkbox.mjs";
@@ -453,7 +454,7 @@ function IndustriaFormWizard({
   const step3Valid = setores.size > 0 && areaOp.trim() && regime.trim() && intervencoes.trim();
   if (step === 1) {
     return /* @__PURE__ */ jsxRuntimeExports.jsxs(FormShell, { badge: "Indústria", title: "Atendimento Técnico Industrial", onBack: onCancel, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed mb-8", children: "Preencha as informações abaixo para que nossa equipe compreenda o cenário operacional da sua construtora/incorporadora e avalie como a gestão técnica do pós-obra pode trazer mais controle, padronização e eficiência para sua operação." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed mb-8", children: "Preencha as informações abaixo para que nossa equipe compreenda as condições operacionais do ativo e identifique possíveis necessidades técnicas." }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-5", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "i-nome", children: "Nome" }),

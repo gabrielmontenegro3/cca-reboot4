@@ -13,7 +13,7 @@ import "crypto";
 import "async_hooks";
 import "stream";
 import "../_libs/isbot.mjs";
-const appCss = "/assets/styles-D7oIp8JS.css";
+const appCss = "/assets/styles-Cd2yyW21.css";
 function NotFoundComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-7xl font-bold text-foreground", children: "404" }),
@@ -29,7 +29,7 @@ function NotFoundComponent() {
     ) })
   ] }) });
 }
-const Route$2 = createRootRoute({
+const Route$3 = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -70,7 +70,19 @@ function RootShell({ children }) {
 function RootComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {});
 }
-const $$splitComponentImporter$1 = () => import("./contato-0SGI0qbi.mjs");
+const $$splitComponentImporter$2 = () => import("./sobre-nos-Sx79N4gN.mjs");
+const Route$2 = createFileRoute("/sobre-nos")({
+  head: () => ({
+    meta: [{
+      title: "CCA — Sobre nós"
+    }, {
+      name: "description",
+      content: "A CCA estrutura tecnicamente a informação do ativo construído. Engenharia Diagnóstica, inspeção, reabilitação e governança técnica em predial e industrial."
+    }]
+  }),
+  component: lazyRouteComponent($$splitComponentImporter$2, "component")
+});
+const $$splitComponentImporter$1 = () => import("./contato-CIss9fCF.mjs");
 const Route$1 = createFileRoute("/contato")({
   head: () => ({
     meta: [{
@@ -82,7 +94,7 @@ const Route$1 = createFileRoute("/contato")({
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./index-DBYr6HGP.mjs");
+const $$splitComponentImporter = () => import("./index-C4a_yKsa.mjs");
 const Route = createFileRoute("/")({
   head: () => ({
     meta: [{
@@ -114,21 +126,27 @@ const Route = createFileRoute("/")({
   }),
   component: lazyRouteComponent($$splitComponentImporter, "component")
 });
+const SobreNosRoute = Route$2.update({
+  id: "/sobre-nos",
+  path: "/sobre-nos",
+  getParentRoute: () => Route$3
+});
 const ContatoRoute = Route$1.update({
   id: "/contato",
   path: "/contato",
-  getParentRoute: () => Route$2
+  getParentRoute: () => Route$3
 });
 const IndexRoute = Route.update({
   id: "/",
   path: "/",
-  getParentRoute: () => Route$2
+  getParentRoute: () => Route$3
 });
 const rootRouteChildren = {
   IndexRoute,
-  ContatoRoute
+  ContatoRoute,
+  SobreNosRoute
 };
-const routeTree = Route$2._addFileChildren(rootRouteChildren)._addFileTypes();
+const routeTree = Route$3._addFileChildren(rootRouteChildren)._addFileTypes();
 function DefaultErrorComponent({ error, reset }) {
   const router = useRouter();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [

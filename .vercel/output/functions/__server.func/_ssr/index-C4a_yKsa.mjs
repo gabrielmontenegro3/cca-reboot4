@@ -1,5 +1,6 @@
 import { j as jsxRuntimeExports, r as reactExports } from "../_libs/react.mjs";
-import { N as Navbar, c as cn, f as fieldImg, i as industrialImg, l as logoCCA } from "./utils-DxbC-_0b.mjs";
+import { N as Navbar, i as industrialImg, l as logoCCA } from "./industrial-BXO_1P4u.mjs";
+import { c as cn, f as fieldImg } from "./utils-Bl2p2gxr.mjs";
 import "../_libs/tanstack__react-router.mjs";
 import "../_libs/tanstack__router-core.mjs";
 import "../_libs/tanstack__history.mjs";
@@ -27,7 +28,6 @@ const SITE_SECTIONS = [
   { id: "pilares", label: "Pilares" },
   { id: "fluxo", label: "Fluxo" },
   { id: "beneficios", label: "Benefícios" },
-  { id: "sobre-nos", label: "Sobre nós" },
   { id: "confidencialidade", label: "Confidencialidade" },
   { id: "sistema", label: "Sistema" },
   { id: "contato", label: "Contato" }
@@ -617,7 +617,7 @@ function Industrial() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
-      id: "sobre-nos",
+      id: "engenharia",
       ref,
       className: "reveal py-28 lg:py-36 bg-secondary/40 relative overflow-hidden",
       children: [

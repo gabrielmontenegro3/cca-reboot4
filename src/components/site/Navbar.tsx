@@ -50,12 +50,12 @@ export function Navbar({ solid = false }: NavbarProps) {
             className="block h-7 sm:h-9 w-px shrink-0 bg-gradient-to-b from-transparent via-cream/22 sm:via-cream/35 to-transparent opacity-70 sm:opacity-90"
             aria-hidden
           />
-          <a
-            href="/#sobre-nos"
+          <Link
+            to="/sobre-nos"
             className="text-xs sm:text-sm font-medium text-cream/90 hover:text-cyan-electric transition-colors whitespace-nowrap shrink-0"
           >
             Sobre nós
-          </a>
+          </Link>
           <span className="flex-1 min-w-2" aria-hidden />
           <a
             href="/#contato"

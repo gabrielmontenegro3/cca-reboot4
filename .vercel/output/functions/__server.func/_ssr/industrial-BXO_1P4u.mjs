@@ -1,7 +1,5 @@
 import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { c as clsx } from "../_libs/clsx.mjs";
-import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 const logoCCA = "/assets/ChatGPT%20Image%2011%20de%20mai.%20de%202026_%2015_25_03%20(1)-DUpfXKrB.png";
 const solidClass = "bg-deep border-b border-cream/10";
 const scrolledClass = "bg-deep/80 backdrop-blur-xl border-b border-cream/10";
@@ -47,9 +45,9 @@ function Navbar({ solid = false }) {
             }
           ),
           /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "a",
+            Link,
             {
-              href: "/#sobre-nos",
+              to: "/sobre-nos",
               className: "text-xs sm:text-sm font-medium text-cream/90 hover:text-cyan-electric transition-colors whitespace-nowrap shrink-0",
               children: "Sobre nós"
             }
@@ -71,15 +69,9 @@ function Navbar({ solid = false }) {
     }
   );
 }
-const fieldImg = "/assets/field-CVNL-Tsb.jpg";
 const industrialImg = "/assets/industrial-CcFzInZu.jpg";
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
 export {
   Navbar as N,
-  cn as c,
-  fieldImg as f,
   industrialImg as i,
   logoCCA as l
 };

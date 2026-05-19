@@ -576,7 +576,7 @@ export function Industrial() {
   ];
   return (
     <section
-      id="sobre-nos"
+      id="engenharia"
       ref={ref}
       className="reveal py-28 lg:py-36 bg-secondary/40 relative overflow-hidden"
     >

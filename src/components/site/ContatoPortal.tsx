@@ -64,54 +64,6 @@ function toggleSetItem(set: Set<string>, key: string, checked: boolean) {
   return next;
 }
 
-function ContatoIntro() {
-  return (
-    <section className="relative border-b border-border bg-background">
-      <div className="absolute inset-0 grid-bg-light opacity-40 pointer-events-none" />
-      <div className="relative max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">
-          Entrada no site
-        </p>
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-cyan-electric mb-4">
-          Portal CCA
-        </p>
-        <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-foreground text-balance">
-          Entrada técnica para{" "}
-          <span className="text-gradient">construtoras, incorporadoras e indústria</span>
-        </h1>
-        <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-          O portal da CCA será utilizado como estrutura de entrada técnica para construtoras,
-          incorporadoras e plantas industriais. O objetivo principal é gerar leads qualificados e
-          iniciar conversas técnicas relacionadas a pós-obra, garantia predial, inspeção técnica,
-          diagnóstico e reabilitação de sistemas construtivos.
-        </p>
-
-        <div className="mt-10 grid md:grid-cols-2 gap-6">
-          <div className="rounded-xl border border-border bg-card/80 p-6">
-            <h2 className="font-display text-lg text-foreground mb-3">O portal não deve transmitir</h2>
-            <ul className="space-y-2 text-sm text-muted-foreground list-disc pl-5">
-              <li>software SaaS</li>
-              <li>plataforma comercial</li>
-              <li>operação massiva já implantada</li>
-              <li>estrutura consolidada de pós-obra</li>
-            </ul>
-          </div>
-          <div className="rounded-xl border border-cyan-electric/25 bg-deep/5 p-6">
-            <h2 className="font-display text-lg text-foreground mb-3">O portal deve transmitir</h2>
-            <ul className="space-y-2 text-sm text-muted-foreground list-disc pl-5">
-              <li>engenharia especializada</li>
-              <li>abordagem consultiva</li>
-              <li>apoio técnico</li>
-              <li>engenharia diagnóstica</li>
-              <li>entendimento operacional</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export function ContatoPortal() {
   const [flow, setFlow] = useState<Flow>(null);
   const [step, setStep] = useState<StepNum>(1);
@@ -140,7 +92,6 @@ export function ContatoPortal() {
 
   return (
     <>
-      <ContatoIntro />
       <section className="py-16 lg:py-24 bg-secondary/30 relative overflow-hidden">
         <div className="absolute inset-0 grid-bg-light opacity-35 pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
@@ -314,8 +265,7 @@ function ConstrutoraFormWizard({
         onBack={onCancel}
       >
         <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-          Preencha as informações abaixo para que nossa equipe compreenda o contexto da sua operação e
-          identifique possíveis necessidades técnicas relacionadas ao pós-obra.
+        Preencha as informações abaixo para que nossa equipe compreenda o cenário operacional da sua construtora/incorporadora e avalie como a gestão técnica do pós-obra pode trazer mais controle, padronização e eficiência para sua operação.
         </p>
         <div className="space-y-5">
           <div>
